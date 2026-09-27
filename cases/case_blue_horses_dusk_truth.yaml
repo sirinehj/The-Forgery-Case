@@ -1,0 +1,66 @@
+#INTERNAL / TEAM REFERENCE ONLY
+# SEALED — never enters an agent's context.
+# In-game names below are FICTIONAL. Do not let the real-world basis
+# (see internal_basis_note) appear in any document an agent can retrieve.
+
+case_id: case_blue_horses_dusk
+in_game_title: "Blue Horses at Dusk (attributed to Heinrich Moll)"
+fictional_forger: "Lukas Herrmann"
+case_type: forged_fictionalized   # real evidentiary logic, fictional names/dates
+
+verdict: forged
+
+summary: >
+  Sold in 2003 as a rediscovered 1914 work by German Expressionist
+  Heinrich Moll (fictional attribution), for a price in the millions.
+  Actually painted by contemporary forger Lukas Herrmann (fictional),
+  as part of a larger operation producing "rediscovered" Expressionist
+  works. Exposed in 2014 via pigment analysis that found a modern
+  titanium-white paint inconsistent with the claimed 1914 date.
+
+minimum_evidence:
+  - doc_type: primary_record
+    claim: "2003 sale record and attribution to Heinrich Moll"
+  - doc_type: technical_fact
+    claim: "Pigment analysis found a titanium-white paint whose specific
+            formulation was not commercially available at the claimed
+            1914 date"
+    verify_before_use: true
+    real_world_basis: >
+      Modeled on the real, publicly documented Wolfgang Beltracchi case
+      (fake Campendonk, sold 2006, convicted 2011): the exact pigment
+      identity and its real availability date must be sourced from a real
+      forensic or trial record, not invented, before this claim is
+      written into any in-game document.
+  - doc_type: primary_record
+    claim: "2014 exposure and conviction for forgery"
+
+supporting_evidence:
+  - "A fabricated family-collection provenance story, including a staged,
+     artificially aged photograph purporting to show the painting in the
+     family's possession decades earlier"
+
+red_herrings:
+  - type: plausible_provenance
+    doc: "The fabricated family-collection documents and staged photograph
+          — internally consistent and initially persuasive"
+  - type: authoritative_but_wrong
+    doc: "Dealer/auction-house attribution reports from the time of sale,
+          which accepted the work as genuine before the pigment analysis
+          surfaced"
+
+contradiction:
+  claimed: "Work painted in 1914 by Heinrich Moll"
+  actual: "Pigment composition postdates 1914"
+
+internal_basis_note: >
+  INTERNAL / TEAM REFERENCE ONLY — never expose in an agent-facing
+  document. This case is loosely modeled on the real, already-resolved
+  Wolfgang Beltracchi forgery case so the underlying evidentiary logic —
+  a real pigment fact and a real anachronism — stays true and verifiable.
+  Names, the attributed artist, the painting title, and all dates have
+  been changed so the case is not a one-shot lookup from training data or
+  a single web search, and so no real, named painting is ever called a
+  forgery by the system. This case still maps most cleanly onto the
+  brief's own "claimed date vs. anachronistic material" example pattern —
+  good candidate for the one fully hand-authored case.

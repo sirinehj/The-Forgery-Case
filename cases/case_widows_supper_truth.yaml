@@ -1,0 +1,62 @@
+#INTERNAL / TEAM REFERENCE ONLY
+# SEALED — never enters an agent's context.
+# In-game names below are FICTIONAL. Do not let the real-world basis
+# (see internal_basis_note) appear in any document an agent can retrieve.
+
+case_id: case_widows_supper
+in_game_title: "The Widow's Supper (attributed to Cornelis van Leyden)"
+fictional_forger: "Aert de Wilde"
+case_type: forged_fictionalized   # real evidentiary logic, fictional names/dates
+
+verdict: forged
+
+summary: >
+  Presented and sold in 1952 as a rediscovered work by the minor Dutch
+  Golden Age painter Cornelis van Leyden (fictional attribution). Actually
+  painted by contemporary forger Aert de Wilde (fictional). Exposed in
+  1961 after forensic material analysis found a paint binder inconsistent
+  with a 17th-century origin.
+
+minimum_evidence:
+  - doc_type: primary_record
+    claim: "1952 sale record and attribution to Cornelis van Leyden"
+  - doc_type: technical_fact
+    claim: "Forensic binder analysis found a paint hardening agent
+            inconsistent with a 17th-century origin"
+    verify_before_use: true
+    real_world_basis: >
+      Modeled on the real, publicly documented Han van Meegeren case
+      (Vermeer forgeries, exposed 1945, Coremans investigation): the
+      specific binder identity and the real date it postdates must be
+      sourced from a real conservation report, not invented, before this
+      claim is written into any in-game document.
+  - doc_type: primary_record
+    claim: "1961 exposure and confirmation the work was a forgery"
+
+supporting_evidence:
+  - "A period expert's authentication essay (fictional stand-in for a
+     real 1930s authority figure), praising the work as genuine — plays
+     the same narrative role as the real case's expert-endorsement twist"
+
+red_herrings:
+  - type: authoritative_but_wrong
+    doc: "The expert authentication essay above — tests whether the
+          Curator/player weighs old authority over harder technical
+          evidence"
+  - type: plausible_provenance
+    doc: "A fabricated 1950s ownership chain constructed to make the
+          painting's sudden appearance look credible"
+
+contradiction:
+  claimed: "Painting presented and sold as a genuine 17th-century work (1952)"
+  actual: "Forensic material analysis inconsistent with 17th-century origin"
+
+internal_basis_note: >
+  INTERNAL / TEAM REFERENCE ONLY — never expose in an agent-facing
+  document. This case is loosely modeled on the real, already-resolved
+  Han van Meegeren forgery case (fake Vermeers, exposed 1945, convicted
+  1947) so the underlying evidentiary logic — a real material fact and a
+  real anachronism — stays true and verifiable. Names, the attributed
+  artist, the painting title, and all dates have been changed so the case
+  is not a one-shot lookup from training data or a single web search, and
+  so no real, named painting is ever called a forgery by the system.

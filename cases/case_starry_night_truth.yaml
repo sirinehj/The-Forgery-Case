@@ -1,0 +1,45 @@
+#INTERNAL / TEAM REFERENCE ONLY
+# SEALED — never enters an agent's context.
+# Read only by the verdict scorer and the evaluation harness.
+
+case_id: case_starry_night
+in_game_title: "The Starry Night"
+real_world_basis: "Vincent van Gogh, The Starry Night, June 1889"
+case_type: control          # authentic control case — tests that the system
+                             # doesn't over-flag when the evidence is clean
+
+verdict: authentic
+
+summary: >
+  Painted by Van Gogh in June 1889 at the Saint-Paul-de-Mausole asylum,
+  Saint-Rémy-de-Provence, depicting the view from his room shortly before
+  sunrise, with an invented village added. Continuous, well-documented
+  ownership chain from the artist's estate through to MoMA's 1941
+  acquisition via the Lillie P. Bliss Bequest. No pigment, technique, or
+  provenance anomaly exists in the real record.
+
+minimum_evidence:
+  - doc_type: primary_record
+    claim: "MoMA collection record, accession via Lillie P. Bliss Bequest, 1941"
+  - doc_type: technical_fact
+    claim: "Pigments and canvas consistent with Van Gogh's documented 1889 palette and materials"
+    verify_before_use: true   # do not fill with an invented pigment list —
+                               # source from a real conservation paper or leave abstained
+
+supporting_evidence:
+  - "Wikipedia / art-historical consensus on date and location of painting"
+  - "Comparanda: other 1888–1890 Van Gogh works (e.g. Met's Wheat Field with Cypresses) showing consistent late-period technique"
+
+red_herrings:
+  - "None deliberately planted — this case exists so the system can
+     demonstrate it reaches 'authentic' cleanly, not just 'forged.'
+     If you want a red herring for difficulty, consider a minor,
+     real historical dispute over exact painting date/window (see note)."
+
+contradiction: null   # no anachronism exists in this case — intentional
+
+notes_for_team: >
+  Keep this case's document set clean and small relative to the other two.
+  Its job is to be the negative control: if the Curator/Scientist ever
+  flags a contradiction here, that's a false positive worth catching in
+  testing, not a real clue to chase.
